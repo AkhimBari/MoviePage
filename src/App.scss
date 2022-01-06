@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #24323f;
+}
+
+.searchTitle {
+    color: white;
+    margin: 4vh 1vmax 0 5vmax;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+// ----------------- Header -------------------
+
+header {
+    display: flex;
+    align-items: center;
+
+    #search {
+        margin-left: 28vmax;
+        background-color: #24323f;
+        color: #68e28d;
+        border-radius: 10rem;
+        border-style: solid;
+        width: 25vmax;
+        height: 3vmax;
+        font-family: roboto, "Roboto";
+        font-size: 1.4vmax;
+        // vertical-align: top;
+        line-height: 100%;
+        text-align: center;
+    }
+
+    a {
+        font-family: "Anton", sans-serif;
+        font-size: 50px;
+        color: white;
+
+        span {
+            color: #68e28d;
+        }
+    }
+}
+
+.Head {
+    background-color: rgba(26, 38, 52, 1);
+    // display: flex;
+    padding: 2vmax 0 2vmax 4vmax;
+    h1 {
+        font-family: "Anton", sans-serif;
+        font-size: 50px;
+        color: white;
+
+        span {
+            color: #68e28d;
+        }
+    }
+}
+
+.borderJoy:focus {
+    outline: none;
+    border: 3px solid #68e28d;
+}
+
+// ---------------- Landing-Page ------------------
+
+.grid {
+    background-color: #24323f;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 5vmax 5vmax;
+
+    .movie-item {
+        position: relative;
+        color: rgb(140, 134, 134);
+        font-size: 0.9rem;
+    }
+
+    img {
+        width: 100%;
+    }
+    .votes {
+        display: inline-block;
+        color: #423d3d;
+        background-color: #21e18c;
+        border-radius: 60%;
+        position: absolute;
+        right: 0;
+        padding: 11px;
+        margin: 7px 7px 0 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    padding-top: 0.8vmax;
+    padding-bottom: 1vmax;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+//  ---------------- Detailseite --------------
+
+.Detail {
+    background-color: #24323f;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 4vmax;
+    padding-right: 4vmax;
+    padding-bottom: 60px;
+
+    h2 {
+        padding: 37px 0;
+        font-size: 2rem;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+.Detail2 {
+    padding-top: 12vh;
+    font-size: 1.3rem;
+
+    // .change{
+    //     // padding-right: 16vw;
+    // }
+
+    // .change2{
+    //     padding-right: 24vw;
+    // }
+
+    // .genreStyle {
+
+    // }
+    .first {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    .second {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // display: flex;
+        // justify-content: space-between;
+        padding: 3vh 0;
+    }
+
+    .third {
+        padding-bottom: 30px;
+    }
+
+    .text {
+        width: 80%;
+    }
+}
+
+// ------------- Footer ---------------
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// font-family: 'Anton', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+footer {
+    display: flex;
+    background-color: #1a2634;
+    padding: 4vh 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+    div:nth-of-type(1) {
+        display: flex;
+        padding-left: 4vmax;
+        align-items: center;
+
+        p {
+            font-family: "Anton", sans-serif;
+            font-size: 50px;
+
+            span {
+                color: #68e28d;
+            }
+        }
+
+        a {
+            font-size: 25px;
+
+            padding-left: 7vmax;
+        }
+    }
+
+    div:nth-of-type(2) {
+        justify-content: center;
+        align-self: baseline;
+        padding-left: 19vmax;
+    }
+
+    .logo {
+        width: 50%;
+    }
+}
+
+// ------------ Media Queries ----------------
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        // margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        a {
+            padding: 3.5vmax 0 2vmax 4vmax;
+        }
+        #search {
+            margin: 1.2vmax auto 5vmax auto;
+        }
+    }
+
+    .Head {
+        padding: 0;
+    }
+
+    .movie-item {
+        padding-top: 0.4vmax;
+        p {
+            font-size: 0.6rem;
+            padding-top: 0.1rem;
+        }
+        h2 {
+            font-size: 1rem;
+            padding: 0.4rem 0 1.4rem 0;
+        }
+    }
+
+    footer {
+        padding: 1vmax 0 1vmax 0;
+        align-self: baseline;
+
+        div:nth-of-type(1) {
+            padding-left: 4vmax;
+            // align-items: center;
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 0.6rem;
+                padding-left: 2vmax;
+            }
+        }
+
+        div:nth-of-type(2) {
+            // justify-content: center;
+            // align-self: baseline;
+            padding-left: 5vmax;
+        }
+
+        .logo {
+            width: 20%;
+        }
+    }
+
+    // -------------------- Detailseite --------------------
+
+    .Detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 4vmax;
+        // padding-right: 4vmax;
+        //  padding-bottom: 60px;
+
+        h2 {
+            padding: 4vmax 0 2vmax 0;
+            font-size: 1.6rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .Detail2 {
+            padding-top: 2vh;
+            font-size: 1rem;
+
+            .first {
+                grid-template-columns: 1fr;
+            }
+
+            .second {
+                grid-template-columns: 1fr;
+                padding: 2vh 0;
+            }
+
+            .third {
+                padding-bottom: 30px;
+            }
+
+            .text {
+                width: 80%;
+            }
+
+            .videoResp {
+                width: 30vmax;
+            }
+
+            .vid {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
